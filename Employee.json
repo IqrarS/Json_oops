@@ -1,5 +1,6 @@
-{
-     "Employ_Details": [
+import json
+
+x={"Employ_Details": [
           {
                "Employ_Name": "Iqrar",
                "DOB": "30/03/1997",
@@ -37,3 +38,6 @@
           }
      ]
 }
+with
+open("Employ.json","w")as f: json.dump(x,f,indent=5)
+print("json file is generated")
